@@ -1,0 +1,27 @@
+{
+  "name": "app-movie-dev-con-api-rest",
+  "version": "1.0.0",
+  "description": "Proyecto del curso práctico consumo de API REST, consumo de la API The movie database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tafurdev/app-movie-dev-con-api-rest.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "api",
+    "manipulación",
+    "del",
+    "DOM."
+  ],
+  "author": "Jeaneth Tafur <tafurdev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tafurdev/app-movie-dev-con-api-rest/issues"
+  },
+  "homepage": "https://github.com/tafurdev/app-movie-dev-con-api-rest#readme"
+}
