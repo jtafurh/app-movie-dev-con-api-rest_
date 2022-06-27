@@ -8,22 +8,22 @@
   <link rel="stylesheet" href="/style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-  <header class="main-header">
-    <span class="material-symbols-rounded">
+  <header class="main-header main-header--linear-gradient">
+    <span class="material-symbols-rounded inactive">
       menu
       </span>
-    <span class="material-symbols-rounded inactive">
+    <span class="material-symbols-rounded ">
       arrow_back_ios
       </span>
     <section class="main-header__title-container">
-      <span class="material-symbols-rounded logo">
+      <span class="material-symbols-rounded logo ">
         slideshow
         </span>
-      <h1 class="main-header__title">MovieDev</h1>
+      <h1 class="main-header__title ">MoviDev</h1>
     </section>
   </header>
   <main>
@@ -40,7 +40,20 @@
           </span>
       </button>
     </form>
-    <article class="movie-list">
+    <div class="movie-list inactive">
+      <div class="movie-list__container movie-list__container--vertical">
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+    <article class="movie-list ">
       <h2 class="movie-list__title">Tendencias</h2>
       <div class="movie-list__container">
         <figure class="movie__container">
@@ -68,6 +81,58 @@
         </figure>
       </div>
     </article>
+    <div class="category-list inactive">
+      <ul class="category-list__container">
+        <li class="category-list__item"><a class="category-list__link" href="#">Acción</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Anime</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Aventura</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Comedia</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Acción</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Anime</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Aventura</a></li>
+        <li class="category-list__item"><a class="category-list__link" href="#">Comedia</a></li>
+      </ul>
+    </div>
+    <div class="movie-details inactive">
+      <figure class="movie-details__container-image">
+        <img class="movie-details__image" src="/style/imgs/dbs-hero.jpg" alt="">
+      </figure>
+      <article class="movie-details__list">
+        <h2 class="movie-details__title">Dragon Ball Super: Super Hero</h2>
+        <span class="material-symbols-rounded">star</span>
+        <p class="movie-details__score">4.0</p>
+        <p class="movie-details__age">2022</p>
+        <p class="movie-details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aliquid odit. Et laudantium nihil ut possimus, minus velit neque blanditiis nemo sunt, eligendi veniam asperiores rerum hic, perspiciatis voluptates quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus sunt placeat quasi, vel repudiandae suscipit laudantium? Dolorem minus nihil, eius dignissimos qui inventore reiciendis hic quas libero non velit!</p>
+        <ul class="movie-details__category-list">
+          <li class="movie-details__category-item">Acción</li>
+          <li class="movie-details__category-item">Aventura</li>
+          <li class="movie-details__category-item">Anime</li>
+        </ul>
+      </article>
+    </div>
+    <section class="movie-details__similar movie-list inactive">
+      <h2 class="movie-list__title">Similares</h2>
+      <div class="movie-list__container movie-list__container--vertical">
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+        <figure class="movie__container movie__container--vertical">
+            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure>
+      </div>
+    </section>
   </main>
   <footer class="footer-main">
     <p class="footer-main__text">Hecho por <a class="footer-main__link" href="#">@jtafurh</a></p>
