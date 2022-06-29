@@ -25,7 +25,6 @@ buttonSearch.addEventListener('click', ()=>{
 buttonCancel.addEventListener('click',()=>{
   searchFormInput.value=''
 })
-
 function navigator() {
   if (location.hash.startsWith('#home')) {
     homePage()
@@ -44,9 +43,7 @@ function navigator() {
   // Para que pagina siempre aparezca en la parte superior al cargar
   window.scroll(0,0); // For Safari
 //document.documentElement.scrollTo = 0; // For Chrome, Firefox, IE and Opera
-
 }
-
 function homePage() {
   menu.classList.remove('inactive')
   arrowBack.classList.add('inactive')

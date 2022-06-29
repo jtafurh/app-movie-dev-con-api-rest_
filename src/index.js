@@ -49,6 +49,7 @@ function generatorCategoryList(categories,container){
     container.appendChild(categoryListItem)
   });
 }
+
 // Llamados a la API
 async function getTrendingMovies() {
   const{data}=await api('/trending/movie/day');

@@ -103,5 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Archivo de API KEY
+# Archivo de API KEY ignorar
 /src/secrets.js
