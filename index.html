@@ -12,130 +12,75 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-  <header class="main-header main-header--linear-gradient">
-    <span class="material-symbols-rounded inactive">
-      menu
-      </span>
-    <span class="material-symbols-rounded ">
-      arrow_back_ios
-      </span>
+  <!-- Header -->
+  <header id="mainHeader" class="main-header">
+    <span class="material-symbols-rounded menu">menu</span>
+    <span class="material-symbols-rounded inactive arrow-back">arrow_back_ios</span>
     <section class="main-header__title-container">
-      <span class="material-symbols-rounded logo ">
-        slideshow
-        </span>
-      <h1 class="main-header__title ">MoviDev</h1>
+      <span class="material-symbols-rounded logo">slideshow </span>
+      <h1 class="main-header__title">MoviDev</h1>
     </section>
   </header>
   <main>
-    <form class="search-form">
-      <input class="search-form__input" type="search" name="search" id="search" placeholder="Buscar...">
-      <button class="search-form__button" type="reset">
-        <span class="material-symbols-rounded">
-          backspace
-          </span>
-      </button>
-      <button class="search-form__button" type="submit">
-        <span class="material-symbols-rounded">
-          search
-          </span>
-      </button>
-    </form>
-    <div class="movie-list inactive">
-      <div class="movie-list__container movie-list__container--vertical">
-        <figure class="movie__container movie__container--vertical">
-          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-      </div>
-    </div>
-    <article class="movie-list ">
-      <h2 class="movie-list__title">Tendencias</h2>
-      <div class="movie-list__container">
-        <figure class="movie__container">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container">
-            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-      </div>
-    </article>
-    <article class="movie-list">
-      <h2 class="movie-list__title">Categoría aleatoria</h2>
-      <div class="movie-list__container">
-        <figure class="movie__container">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container">
-            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-      </div>
-    </article>
-    <div class="category-list inactive">
-      <ul class="category-list__container">
-        <li class="category-list__item"><a class="category-list__link" href="#">Acción</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Anime</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Aventura</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Comedia</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Acción</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Anime</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Aventura</a></li>
-        <li class="category-list__item"><a class="category-list__link" href="#">Comedia</a></li>
-      </ul>
-    </div>
-    <div class="movie-details inactive">
+    <!-- Detalles de una película -->
+    <div id="movieDetails" class="movie-details inactive">
       <figure class="movie-details__container-image">
-        <img class="movie-details__image" src="/style/imgs/dbs-hero.jpg" alt="">
+        <!-- <img class="movie-details__image" src="" alt=""> -->
       </figure>
       <article class="movie-details__list">
-        <h2 class="movie-details__title">Dragon Ball Super: Super Hero</h2>
+        <h2 class="movie-details__title"></h2>
         <span class="material-symbols-rounded">star</span>
-        <p class="movie-details__score">4.0</p>
-        <p class="movie-details__age">2022</p>
-        <p class="movie-details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aliquid odit. Et laudantium nihil ut possimus, minus velit neque blanditiis nemo sunt, eligendi veniam asperiores rerum hic, perspiciatis voluptates quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus sunt placeat quasi, vel repudiandae suscipit laudantium? Dolorem minus nihil, eius dignissimos qui inventore reiciendis hic quas libero non velit!</p>
+        <p class="movie-details__score"></p>
+        <p class="movie-details__age"></p>
+        <p class="movie-details__description"></p>
         <ul class="movie-details__category-list">
-          <li class="movie-details__category-item">Acción</li>
-          <li class="movie-details__category-item">Aventura</li>
-          <li class="movie-details__category-item">Anime</li>
+          <!-- <li class="category-list__item">Acción</li> -->
         </ul>
       </article>
     </div>
-    <section class="movie-details__similar movie-list inactive">
-      <h2 class="movie-list__title">Similares</h2>
-      <div class="movie-list__container movie-list__container--vertical">
-        <figure class="movie__container movie__container--vertical">
-          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
+    <!-- Formulario de búsqueda -->
+    <form id="searchForm" class="search-form">
+      <input class="search-form__input" type="search" name="search" id="search" placeholder="Buscar..." value="">
+      <button id="buttonCancel" class="search-form__button" type="button">
+        <span class="material-symbols-rounded">cancel</span>
+      </button>
+      <button id="buttonSearch" class="search-form__button" type="submit">
+        <span class="material-symbols-rounded">search</span>
+      </button>
+    </form>
+    <!-- lista de películas en tendencia -->
+    <article id="trending" class="movie-list ">
+      <h2 class="movie-list__title">Tendencias</h2>
+      <div class="movie-list__container">
+        <!-- <figure class="movie__container">
           <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-          <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
-        <figure class="movie__container movie__container--vertical">
-            <img class="movie__image" src="/style/imgs/dbs-hero.jpg" alt="">
-        </figure>
+        </figure> -->
       </div>
-    </section>
+    </article>
+    <!-- Lista de películas general -->
+    <article id="movieList" class="movie-list">
+      <h2 class="movie-list__title"></h2>
+      <div class="movie-list__container">
+        <!-- <figure class="movie__container movie__container--vertical">
+          <img class="movie__image " src="/style/imgs/dbs-hero.jpg" alt="">
+        </figure> -->
+      </div>
+    </article>
+    <!-- Lista de categorías -->
+    <div id="categoryList" class="category-list inactive">
+      <ul class="category-list__container">
+        <!-- <li class="category-list__item"></li> -->
+      </ul>
+    </div>
   </main>
   <footer class="footer-main">
-    <p class="footer-main__text">Hecho por <a class="footer-main__link" href="#">@jtafurh</a></p>
+    <p class="footer-main__text">Hecho por <a class="footer-main__link" href="https://twitter.com/jtafurh">@jtafurh</a></p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- <script src="/src/key.js"></script> -->
+  <script src="/src/secrets.js"></script>
+  <script src="/src/nodes.js"></script>
+  <script src="/src/index.js"></script>
+  <script src="/src/navigation.js"></script>
 </body>
 </html>
